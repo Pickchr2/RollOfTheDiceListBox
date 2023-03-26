@@ -8,16 +8,16 @@ Option Explicit On
 Option Strict On
 
 Public Class RollOfTheDiceListBox
-    Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click
+    Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click, ExitToolStripMenuItem.Click
         Me.Close()
     End Sub
 
-    Private Sub ClearButton_Click(sender As Object, e As EventArgs) Handles ClearButton.Click
+    Private Sub ClearButton_Click(sender As Object, e As EventArgs) Handles ClearButton.Click, ClearToolStripMenuItem.Click
         RollResultListBox.Items.Clear()
         RollButton.Select()
     End Sub
 
-    Private Sub RollButton_Click(sender As Object, e As EventArgs) Handles RollButton.Click
+    Private Sub RollButton_Click(sender As Object, e As EventArgs) Handles RollButton.Click, RollToolStripMenuItem.Click
         Dim randomNumber As New Random()
         Dim resultCounter(11) As Integer
         Dim headerRow As String = ""

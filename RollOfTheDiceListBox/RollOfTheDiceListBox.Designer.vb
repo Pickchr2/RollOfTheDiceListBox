@@ -44,7 +44,7 @@ Partial Class RollOfTheDiceListBox
         Me.RollTheDiceMenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuToolStripMenuItem, Me.HelpToolStripMenuItem})
         Me.RollTheDiceMenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.RollTheDiceMenuStrip.Name = "RollTheDiceMenuStrip"
-        Me.RollTheDiceMenuStrip.Size = New System.Drawing.Size(473, 24)
+        Me.RollTheDiceMenuStrip.Size = New System.Drawing.Size(479, 24)
         Me.RollTheDiceMenuStrip.TabIndex = 0
         Me.RollTheDiceMenuStrip.Text = "MenuStrip1"
         '
@@ -58,19 +58,19 @@ Partial Class RollOfTheDiceListBox
         'RollToolStripMenuItem
         '
         Me.RollToolStripMenuItem.Name = "RollToolStripMenuItem"
-        Me.RollToolStripMenuItem.Size = New System.Drawing.Size(101, 22)
+        Me.RollToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.RollToolStripMenuItem.Text = "Roll"
         '
         'ClearToolStripMenuItem
         '
         Me.ClearToolStripMenuItem.Name = "ClearToolStripMenuItem"
-        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(101, 22)
+        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ClearToolStripMenuItem.Text = "Clear"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(101, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'HelpToolStripMenuItem
@@ -93,7 +93,7 @@ Partial Class RollOfTheDiceListBox
         Me.RollResultListBox.ItemHeight = 21
         Me.RollResultListBox.Location = New System.Drawing.Point(9, 75)
         Me.RollResultListBox.Name = "RollResultListBox"
-        Me.RollResultListBox.Size = New System.Drawing.Size(454, 88)
+        Me.RollResultListBox.Size = New System.Drawing.Size(458, 88)
         Me.RollResultListBox.TabIndex = 2
         Me.RollResultListBox.TabStop = False
         '
@@ -143,7 +143,7 @@ Partial Class RollOfTheDiceListBox
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.ClearButton
-        Me.ClientSize = New System.Drawing.Size(473, 218)
+        Me.ClientSize = New System.Drawing.Size(479, 218)
         Me.Controls.Add(Me.RollTheDiceLabel)
         Me.Controls.Add(Me.RollButton)
         Me.Controls.Add(Me.ClearButton)
