@@ -35,7 +35,7 @@ Partial Class RollOfTheDiceListBox
         Me.ClearButton = New System.Windows.Forms.Button()
         Me.RollButton = New System.Windows.Forms.Button()
         Me.RollTheDiceLabel = New System.Windows.Forms.Label()
-        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.RollTheDiceToolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.RollTheDiceMenuStrip.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -58,19 +58,19 @@ Partial Class RollOfTheDiceListBox
         'RollToolStripMenuItem
         '
         Me.RollToolStripMenuItem.Name = "RollToolStripMenuItem"
-        Me.RollToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.RollToolStripMenuItem.Size = New System.Drawing.Size(101, 22)
         Me.RollToolStripMenuItem.Text = "Roll"
         '
         'ClearToolStripMenuItem
         '
         Me.ClearToolStripMenuItem.Name = "ClearToolStripMenuItem"
-        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(101, 22)
         Me.ClearToolStripMenuItem.Text = "Clear"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(101, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'HelpToolStripMenuItem
@@ -93,38 +93,38 @@ Partial Class RollOfTheDiceListBox
         Me.RollResultListBox.ItemHeight = 21
         Me.RollResultListBox.Location = New System.Drawing.Point(9, 75)
         Me.RollResultListBox.Name = "RollResultListBox"
-        Me.RollResultListBox.Size = New System.Drawing.Size(454, 214)
+        Me.RollResultListBox.Size = New System.Drawing.Size(454, 88)
         Me.RollResultListBox.TabIndex = 2
         Me.RollResultListBox.TabStop = False
         '
         'ExitButton
         '
-        Me.ExitButton.Location = New System.Drawing.Point(291, 304)
+        Me.ExitButton.Location = New System.Drawing.Point(290, 169)
         Me.ExitButton.Name = "ExitButton"
-        Me.ExitButton.Size = New System.Drawing.Size(75, 23)
+        Me.ExitButton.Size = New System.Drawing.Size(75, 37)
         Me.ExitButton.TabIndex = 5
         Me.ExitButton.Text = "&Exit"
-        Me.ToolTip1.SetToolTip(Me.ExitButton, "Click to exit the application.")
+        Me.RollTheDiceToolTip.SetToolTip(Me.ExitButton, "Click to exit the application.")
         Me.ExitButton.UseVisualStyleBackColor = True
         '
         'ClearButton
         '
-        Me.ClearButton.Location = New System.Drawing.Point(196, 304)
+        Me.ClearButton.Location = New System.Drawing.Point(195, 169)
         Me.ClearButton.Name = "ClearButton"
-        Me.ClearButton.Size = New System.Drawing.Size(75, 23)
+        Me.ClearButton.Size = New System.Drawing.Size(75, 37)
         Me.ClearButton.TabIndex = 4
         Me.ClearButton.Text = "&Clear"
-        Me.ToolTip1.SetToolTip(Me.ClearButton, "Click to clear the results.")
+        Me.RollTheDiceToolTip.SetToolTip(Me.ClearButton, "Click to clear the results.")
         Me.ClearButton.UseVisualStyleBackColor = True
         '
         'RollButton
         '
-        Me.RollButton.Location = New System.Drawing.Point(101, 304)
+        Me.RollButton.Location = New System.Drawing.Point(100, 169)
         Me.RollButton.Name = "RollButton"
-        Me.RollButton.Size = New System.Drawing.Size(75, 23)
+        Me.RollButton.Size = New System.Drawing.Size(75, 37)
         Me.RollButton.TabIndex = 3
         Me.RollButton.Text = "&Roll"
-        Me.ToolTip1.SetToolTip(Me.RollButton, "Click to see the results of 1000 two 6-sided dice rolls.")
+        Me.RollTheDiceToolTip.SetToolTip(Me.RollButton, "Click to see the results of 1000 two 6-sided dice rolls.")
         Me.RollButton.UseVisualStyleBackColor = True
         '
         'RollTheDiceLabel
@@ -143,7 +143,7 @@ Partial Class RollOfTheDiceListBox
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.ClearButton
-        Me.ClientSize = New System.Drawing.Size(473, 340)
+        Me.ClientSize = New System.Drawing.Size(473, 218)
         Me.Controls.Add(Me.RollTheDiceLabel)
         Me.Controls.Add(Me.RollButton)
         Me.Controls.Add(Me.ClearButton)
@@ -172,5 +172,5 @@ Partial Class RollOfTheDiceListBox
     Friend WithEvents ClearButton As Button
     Friend WithEvents RollButton As Button
     Friend WithEvents RollTheDiceLabel As Label
-    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents RollTheDiceToolTip As ToolTip
 End Class

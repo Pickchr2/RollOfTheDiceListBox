@@ -16,4 +16,31 @@ Public Class RollOfTheDiceListBox
         RollResultListBox.Items.Clear()
         RollButton.Select()
     End Sub
+
+    Private Sub RollButton_Click(sender As Object, e As EventArgs) Handles RollButton.Click
+        Dim randomNumber As New Random()
+        Dim resultCounter(11) As Integer
+        Dim headerRow As String = ""
+        Dim dataRow As String = ""
+
+        RollResultListBox.Items.Clear()
+        For i As Integer = 1 To 1000
+
+            resultCounter(CInt(randomNumber.Next(0, 11))) += 1
+
+        Next
+
+        For j As Integer = 2 To 12
+            headerRow &= (CStr(j).PadLeft(7) & "|")
+        Next
+
+        For k As Integer = 0 To 10
+            dataRow &= (CStr(resultCounter(k)).PadLeft(6) & "|")
+        Next
+
+        RollResultListBox.Items.Add("-----------------------------------------------------------------------------")
+        RollResultListBox.Items.Add(headerRow)
+        RollResultListBox.Items.Add(dataRow)
+        RollResultListBox.Items.Add("-----------------------------------------------------------------------------")
+    End Sub
 End Class
