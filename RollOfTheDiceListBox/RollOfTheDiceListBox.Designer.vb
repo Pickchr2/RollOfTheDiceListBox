@@ -58,19 +58,19 @@ Partial Class RollOfTheDiceListBox
         'RollToolStripMenuItem
         '
         Me.RollToolStripMenuItem.Name = "RollToolStripMenuItem"
-        Me.RollToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.RollToolStripMenuItem.Size = New System.Drawing.Size(101, 22)
         Me.RollToolStripMenuItem.Text = "Roll"
         '
         'ClearToolStripMenuItem
         '
         Me.ClearToolStripMenuItem.Name = "ClearToolStripMenuItem"
-        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(101, 22)
         Me.ClearToolStripMenuItem.Text = "Clear"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(101, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'HelpToolStripMenuItem
@@ -83,7 +83,7 @@ Partial Class RollOfTheDiceListBox
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'RollResultListBox

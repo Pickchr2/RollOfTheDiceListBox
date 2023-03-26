@@ -43,4 +43,8 @@ Public Class RollOfTheDiceListBox
         RollResultListBox.Items.Add(dataRow)
         RollResultListBox.Items.Add("-----------------------------------------------------------------------------")
     End Sub
+
+    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
+        MessageBox.Show("This application will roll two 6-sided dice 1000 times and print the results in the box.", "About", MessageBoxButtons.OK)
+    End Sub
 End Class
