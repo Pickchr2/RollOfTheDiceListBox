@@ -44,7 +44,7 @@ Partial Class RollOfTheDiceListBox
         Me.RollTheDiceMenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuToolStripMenuItem, Me.HelpToolStripMenuItem})
         Me.RollTheDiceMenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.RollTheDiceMenuStrip.Name = "RollTheDiceMenuStrip"
-        Me.RollTheDiceMenuStrip.Size = New System.Drawing.Size(479, 24)
+        Me.RollTheDiceMenuStrip.Size = New System.Drawing.Size(519, 24)
         Me.RollTheDiceMenuStrip.TabIndex = 0
         Me.RollTheDiceMenuStrip.Text = "MenuStrip1"
         '
@@ -83,23 +83,23 @@ Partial Class RollOfTheDiceListBox
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'RollResultListBox
         '
-        Me.RollResultListBox.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.RollResultListBox.Font = New System.Drawing.Font("Courier New", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.RollResultListBox.FormattingEnabled = True
-        Me.RollResultListBox.ItemHeight = 21
+        Me.RollResultListBox.ItemHeight = 16
         Me.RollResultListBox.Location = New System.Drawing.Point(9, 75)
         Me.RollResultListBox.Name = "RollResultListBox"
-        Me.RollResultListBox.Size = New System.Drawing.Size(458, 88)
+        Me.RollResultListBox.Size = New System.Drawing.Size(498, 84)
         Me.RollResultListBox.TabIndex = 2
         Me.RollResultListBox.TabStop = False
         '
         'ExitButton
         '
-        Me.ExitButton.Location = New System.Drawing.Point(290, 169)
+        Me.ExitButton.Location = New System.Drawing.Point(312, 169)
         Me.ExitButton.Name = "ExitButton"
         Me.ExitButton.Size = New System.Drawing.Size(75, 37)
         Me.ExitButton.TabIndex = 5
@@ -109,7 +109,7 @@ Partial Class RollOfTheDiceListBox
         '
         'ClearButton
         '
-        Me.ClearButton.Location = New System.Drawing.Point(195, 169)
+        Me.ClearButton.Location = New System.Drawing.Point(217, 169)
         Me.ClearButton.Name = "ClearButton"
         Me.ClearButton.Size = New System.Drawing.Size(75, 37)
         Me.ClearButton.TabIndex = 4
@@ -119,7 +119,7 @@ Partial Class RollOfTheDiceListBox
         '
         'RollButton
         '
-        Me.RollButton.Location = New System.Drawing.Point(100, 169)
+        Me.RollButton.Location = New System.Drawing.Point(122, 169)
         Me.RollButton.Name = "RollButton"
         Me.RollButton.Size = New System.Drawing.Size(75, 37)
         Me.RollButton.TabIndex = 3
@@ -143,13 +143,14 @@ Partial Class RollOfTheDiceListBox
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.ClearButton
-        Me.ClientSize = New System.Drawing.Size(479, 218)
+        Me.ClientSize = New System.Drawing.Size(519, 218)
         Me.Controls.Add(Me.RollTheDiceLabel)
         Me.Controls.Add(Me.RollButton)
         Me.Controls.Add(Me.ClearButton)
         Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.RollResultListBox)
         Me.Controls.Add(Me.RollTheDiceMenuStrip)
+        Me.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.MainMenuStrip = Me.RollTheDiceMenuStrip
         Me.Name = "RollOfTheDiceListBox"
         Me.Text = "Roll of the dice"

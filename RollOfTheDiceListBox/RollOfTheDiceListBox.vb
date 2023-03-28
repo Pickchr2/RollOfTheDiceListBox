@@ -31,11 +31,11 @@ Public Class RollOfTheDiceListBox
         Next
 
         For j As Integer = 2 To 12
-            headerRow &= (CStr(j).PadLeft(7) & "|")
+            headerRow &= (CStr(j).PadLeft(5) & "|")
         Next
 
         For k As Integer = 0 To 10
-            dataRow &= (CStr(resultCounter(k)).PadLeft(6) & "|")
+            dataRow &= (CStr(resultCounter(k)).PadLeft(5) & "|")
         Next
 
         RollResultListBox.Items.Add("-----------------------------------------------------------------------------")
